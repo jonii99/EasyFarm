@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EasyFarmTests
+namespace EasyFarm.Navigation
 {
     /// <summary>
     /// Controlls the player's navigation. 

@@ -199,6 +199,10 @@
     <Compile Include="Components\MachineComponent.cs" />
     <Compile Include="Components\RestComponent.cs" />
     <Compile Include="Components\TravelComponent.cs" />
+    <Compile Include="Navigation\INavigation.cs" />
+    <Compile Include="Navigation\Navigation.cs" />
+    <Compile Include="Navigation\Navigator.cs" />
+    <Compile Include="Navigation\NavigatorModel.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>

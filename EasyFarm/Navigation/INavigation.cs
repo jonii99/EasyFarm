@@ -1,5 +1,5 @@
 ﻿using System;
-namespace EasyFarmTests
+namespace EasyFarm.Navigation
 {
     /// <summary>
     /// Inteface for navigating to positions. 
