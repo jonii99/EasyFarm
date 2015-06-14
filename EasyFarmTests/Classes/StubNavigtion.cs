@@ -1,9 +1,10 @@
-﻿using System;
+﻿using EasyFarm.Navigation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EasyFarmTests
+namespace EasyFarmTests.Classes
 {
     /// <summary>
     /// A stubbed navigation unit. 

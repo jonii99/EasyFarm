@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using EasyFarm.Navigation;
 
-namespace EasyFarmTests
+namespace EasyFarmTests.UnitTests
 {
     [TestClass]
     public class NavigatorTest

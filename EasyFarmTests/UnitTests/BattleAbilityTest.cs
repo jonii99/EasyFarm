@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 */
 ///////////////////////////////////////////////////////////////////
 
-namespace EasyFarmTests
+namespace EasyFarmTests.UnitTests
 {
     public class BattleAbilityTest
     {

@@ -20,7 +20,7 @@ using EasyFarm.Classes;
 using EasyFarm.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EasyFarmTests
+namespace EasyFarmTests.UnitTests
 {
     [TestClass]
     public class BattleSettingsTest

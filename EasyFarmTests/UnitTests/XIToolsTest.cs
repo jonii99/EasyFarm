@@ -22,7 +22,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Parsing.Abilities;
 using Parsing.Services;
 
-namespace EasyFarmTests
+namespace EasyFarmTests.UnitTests
 {
     [TestClass]
     public class XIToolsTest

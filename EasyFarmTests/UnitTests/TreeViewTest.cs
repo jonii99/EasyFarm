@@ -4,7 +4,7 @@ using EasyFarm.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Parsing.Services;
 
-namespace EasyFarmTests
+namespace EasyFarmTests.UnitTests
 {
     [TestClass]
     public class TreeViewTest
