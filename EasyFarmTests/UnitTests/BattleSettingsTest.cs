@@ -23,7 +23,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace EasyFarmTests
 {
     [TestClass]
-    public class TestBattleSettings
+    public class BattleSettingsTest
     {
         [TestInitialize]
         public void Setup()

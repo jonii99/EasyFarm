@@ -7,7 +7,7 @@ using Parsing.Services;
 namespace EasyFarmTests
 {
     [TestClass]
-    public class TestTreeView
+    public class TreeViewTest
     {
         /// <summary>
         ///     Retrieves abilities from resource files.
@@ -17,7 +17,7 @@ namespace EasyFarmTests
         /// <summary>
         ///     Set up the ability retriever.
         /// </summary>
-        static TestTreeView()
+        static TreeViewTest()
         {
             Retriever = new AbilityService("resources");
         }

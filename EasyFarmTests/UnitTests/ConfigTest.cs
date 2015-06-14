@@ -16,41 +16,38 @@ You should have received a copy of the GNU General Public License
 */
 ///////////////////////////////////////////////////////////////////
 
+using EasyFarm.Classes;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace EasyFarmTests
 {
-    public class TestBattleAbility
+    [TestClass]
+    public class ConfigTest
     {
-        private readonly bool _effectWore;
-        private readonly bool _enabled;
-        private readonly bool _isBuff;
-        private readonly string _name;
-
-        public TestBattleAbility(string name, bool enabled, bool isbuff, bool effectwore)
+        [TestInitialize]
+        public void Setup()
         {
-            _name = name;
-            _enabled = enabled;
-            _isBuff = isbuff;
-            _effectWore = effectwore;
+            // Wipe all static changed data for 
+            // every config test. 
+            Config.Instance = new Config();
         }
 
-        public string Name
+        [TestMethod]
+        public void TestConfigSingletonInstance()
         {
-            get { return _name; }
+            var conf = Config.Instance;
+            conf.PartyFilter = true;
+            Assert.AreEqual(conf.PartyFilter, Config.Instance.PartyFilter);
+            Assert.AreSame(conf, Config.Instance);
         }
 
-        public bool Enabled
+        [TestMethod]
+        public void TestConfigPersistence()
         {
-            get { return _enabled; }
-        }
-
-        public bool IsBuff
-        {
-            get { return _isBuff; }
-        }
-
-        public bool HasEffectWore
-        {
-            get { return _effectWore; }
+            var conf = new Config {PartyFilter = false};
+            Serialization.Serialize("test.xml", conf);
+            conf = Serialization.Deserialize<Config>("test.xml");
+            Assert.IsFalse(conf.PartyFilter);
         }
     }
 }

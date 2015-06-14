@@ -23,7 +23,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace EasyFarmTests
 {
     [TestClass]
-    public class TestMachineComponents
+    public class MachineComponentsTest
     {
         /// <summary>
         ///     Verifies the logic behind the filtering in all
@@ -34,17 +34,17 @@ namespace EasyFarmTests
         public void TestComponentAbilityFiltering()
         {
             // targeted test data
-            var provoke = new TestBattleAbility("Provoke", true, false, false);
-            var fire = new TestBattleAbility("Fire", true, false, false);
+            var provoke = new BattleAbilityTest("Provoke", true, false, false);
+            var fire = new BattleAbilityTest("Fire", true, false, false);
 
             // Buffs test data
-            var protect = new TestBattleAbility("Protect", true, true, true);
-            var shell = new TestBattleAbility("Shell", true, true, true);
+            var protect = new BattleAbilityTest("Protect", true, true, true);
+            var shell = new BattleAbilityTest("Shell", true, true, true);
 
             // Enabled test data
-            var water = new TestBattleAbility("Water", false, false, false);
+            var water = new BattleAbilityTest("Water", false, false, false);
 
-            var testData = new List<TestBattleAbility>
+            var testData = new List<BattleAbilityTest>
             {
                 provoke,
                 protect,
